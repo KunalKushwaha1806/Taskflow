@@ -11,8 +11,8 @@
 
 ## 🌐 Live Demo
 
-**Deployed URL:** `https://YOUR-APP.up.railway.app`
-**GitHub Repo:** `https://github.com/YOUR_USERNAME/taskflow`
+**Deployed URL:** `https://taskflow-production-85ea.up.railway.app`
+**GitHub Repo:** `https://github.com/KunalKushwaha1806`
 
 ---
 
@@ -187,7 +187,7 @@ GET    /api/dashboard                       [JWT] → aggregated stats for all m
 
 ### 1. Clone
 ```bash
-git clone https://github.com/YOUR_USERNAME/taskflow.git
+git clone https://github.com/KunalKushwaha1806
 cd taskflow
 ```
 
@@ -221,57 +221,13 @@ npm run dev
 
 ---
 
-## 🌍 Deployment on Railway
 
-### Step 1: Push to GitHub
-```bash
-git init
-git add .
-git commit -m "Initial commit: TaskFlow"
-git remote add origin https://github.com/YOUR_USERNAME/taskflow.git
-git push -u origin main
-```
-
-### Step 2: Create Railway Project
-1. Go to [railway.app](https://railway.app) → **New Project**
-2. Click **"Deploy from GitHub repo"**
-3. Select your `taskflow` repository
-4. Railway detects `railway.toml` automatically
-
-### Step 3: Set Environment Variables
-In Railway Dashboard → your service → **Variables** tab:
-```
-JWT_SECRET   =  some_very_long_random_string_at_least_32_chars
-NODE_ENV     =  production
-```
-
-### Step 4: Deploy & Verify
-- Railway builds frontend → backend automatically
-- Visit your Railway URL → app is live!
-- Test: `https://YOUR-APP.up.railway.app/api/health`
-  ```json
-  { "status": "ok", "timestamp": "2025-01-01T00:00:00.000Z" }
-  ```
-
-### How it works in production:
-1. Vite builds React → `frontend/dist/`
-2. Express serves `frontend/dist/` as static files
-3. All `/api/*` routes handled by Express
-4. Single Railway service = frontend + backend on one URL (no CORS issues)
-
----
-
-## 🎬 Demo Video
-> [Link to 2–5 minute walkthrough video]
 
 ---
 
 ## 👤 Author
 **Your Name**
-- GitHub: [@your_username](https://github.com/your_username)
-- Email: your@email.com
+- GitHub: [@kunnalkushwaha1806] https://github.com/KunalKushwaha1806
+- Email: kunalkushwaha1806@email.com
 
----
 
-## 📄 License
-MIT
