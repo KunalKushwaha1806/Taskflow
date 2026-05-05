@@ -5,7 +5,7 @@ const path = require('path');
 const { initDb } = require('./db');
 
 const app = express();
-const PORT = process.env.PORT || 8080;  // ← ONLY THIS LINE CHANGED
+const PORT = process.env.PORT;
 
 app.use(cors({ origin: process.env.FRONTEND_URL || '*', credentials: true }));
 app.use(express.json({ limit: '10mb' }));
