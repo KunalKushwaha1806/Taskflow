@@ -5,7 +5,7 @@ const path = require('path');
 const { initDb } = require('./db');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;  // ← ONLY THIS LINE CHANGED
 
 app.use(cors({ origin: process.env.FRONTEND_URL || '*', credentials: true }));
 app.use(express.json({ limit: '10mb' }));
@@ -34,7 +34,6 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500).json({ error: err.message || 'Internal server error' });
 });
 
-// Init DB first, then start server
 initDb().then(() => {
   app.listen(PORT, '0.0.0.0', () =>
     console.log(`🚀 TaskFlow server running on port ${PORT} [${process.env.NODE_ENV || 'development'}]`)
