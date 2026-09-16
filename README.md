@@ -226,7 +226,7 @@ npm run dev
 ---
 
 ## 👤 Author
-**Your Name**
+**Kunal Kushwaha**
 - GitHub: [@kunnalkushwaha1806] https://github.com/KunalKushwaha1806
 - Email: kunalkushwaha1806@email.com
 
